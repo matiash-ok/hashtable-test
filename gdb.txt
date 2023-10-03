@@ -1,0 +1,24 @@
++set loggin enabled on
+Already logging to gdb.txt.
++print hash_table[index]
+$8 = (person *) 0x7fffffffdbb0
++print p
+$9 = (person *) 0x7fffffffd770
++print actual_node
+$10 = (person *) 0x7fffffffdbb0
+main () at hashmap.c:108
+insert_hash_table (p=0x7fffffffdaa0) at hashmap.c:55
+$11 = (person *) 0x7fffffffdaa0
++print hash_table[index]
+$12 = (person *) 0x7fffffffd770
++print actual_node
+$13 = (person *) 0x7fffffffd770
++print actual_node -> name
+$14 = "Jhon", '\000' <repeats 251 times>
++print p -> next
+$15 = (struct person *) 0x0
++print p-> next
+$16 = (struct person *) 0x7fffffffd770
++print p -> name
+$17 = "Matilda2", '\000' <repeats 247 times>
+main () at hashmap.c:109
